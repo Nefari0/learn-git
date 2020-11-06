@@ -1,0 +1,12 @@
+.nav {
+    display: inline-block;
+}
+
+#site-heading {
+    display: inline-block;
+}
+
+.nav-item {
+    display: inline-block;
+    color: blue;
+}

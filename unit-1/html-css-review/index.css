@@ -1,0 +1,18 @@
+body {
+    /* propertyName : propertyValue; */
+    background-color: red;
+}
+
+.first-div {
+    background-color: green;
+}
+
+
+
+/* div.first-div {
+    background-color: blue;
+} */
+
+.second-div {
+    margin-top: 50px;
+}
