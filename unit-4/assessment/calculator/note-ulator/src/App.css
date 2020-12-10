@@ -14,8 +14,8 @@
 }
 
 .header {
-  margin: auto;
-  /* align-content: center; */
+  /* margin: auto; */
+  align-content: center;
   width: 100vh;
   height: 10vh;
   box-shadow: 3px 3px 3px rgb(211, 159, 159);
@@ -58,7 +58,6 @@
   margin: auto;
   background-color: rgb(209, 187, 187);
   /* display: flex; */
-  /* (209, 187, 187) */
   width: 70vh;
   height: 80vh;
   box-shadow: 3px 3px 3px rgb(211, 159, 159);
@@ -77,6 +76,38 @@
   background-color: rgb(230, 226, 226);
   box-shadow: 3px 3px 3px rgb(211, 159, 159);
   align-content: center;
+}
+
+.keypad {
+  margin: auto;
+  background-color: yellow;
+  height: 50vh;
+  width: 45vh;
+  display: flex;
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: space-around;
+}
+
+.calc-display {
+  margin: auto;
+  height: 100vh;
+}
+
+.numkey {
+  /* box-shadow: 3px 3px 3px rgb(211, 159, 159); */
+  box-shadow: 10px 10px 10px rgb(77, 77, 77);
+
+
+  position: relative;
+  height: 20%;
+  width: 8vh;
+  border-radius:50%;
+  /* border: ); */
+  background: none;
 }
 
 .App-link {

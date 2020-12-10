@@ -1,14 +1,3 @@
-// const noteBook = require('./data.json')
-
-
-//this is the layout to entire notebook and all individual notes that are added
-
-// const noteBook = [
-//     {
-//         id: 1,
-//         text: "an array ov strings"
-//     },
-// ]   
 // const noteBook = [{
 //     id:0,
 //     text:"this is a book with lots of textthis is a notebook with lots of textthis is a notebook with lots of text"
@@ -48,10 +37,15 @@ module.exports = {
     editItem: (req,res) => {
         const { note_id } = req.params 
 
-        const { action } = req.query
-
+        const { input } = req.body
         const index = noteBook.findIndex((element) => element.id === +note_id)
-
+        const anyName = {
+            id:index,
+            text:input
+        }
+        noteBook.splice(index,1,anyName)
+        // noteBook[index]
+        res.status(200).send(noteBook)
     } 
 
 

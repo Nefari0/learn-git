@@ -15,8 +15,8 @@ class Display extends Component {
         return(
             <div className="back-drop">
                 {/* <h4>this is text </h4> */}
-                {/* <Calculator/> */}
-                <NotePad/>
+                <Calculator/>
+                {/* <NotePad/> */}
             </div>
         )
     }
